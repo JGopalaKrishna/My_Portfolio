@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link,Outlet } from "react-router-dom";
 
-import 'C:/Users/jakka/OneDrive/Desktop/react/ReactFolder/src/portfolio/all_Styles.css';
+import './all_Styles.css';
 import { CgMenu } from "react-icons/cg";
 import { RiCloseLargeFill } from "react-icons/ri";
 
