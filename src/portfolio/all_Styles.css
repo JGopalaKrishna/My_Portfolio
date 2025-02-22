@@ -19,7 +19,7 @@ a{text-decoration: none;}
 }
 
 /* JGK_portfolio */
-.HoleBody{cursor: url('mouse5.png'),auto;}
+.HoleBody{cursor: url('/mouse5.png'),auto;}
 
 /* MouseAnimation */
 .custom_cursor {
