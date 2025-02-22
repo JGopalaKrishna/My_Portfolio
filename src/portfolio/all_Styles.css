@@ -404,7 +404,7 @@ td{
 /* Projects */
 .ProjectsPage{
   height: fit-content;
-  width: calc(100%-60px);
+  width: calc(100% - 60px);
   padding: 70px 30px ;
   /* position: relative; */
   /* background-color: gold; */
@@ -567,7 +567,7 @@ td{
 
 /* CertificatesPage */
 .CertificatesPage{
-  height: fit-content;width: calc(100%-60px);
+  height: fit-content;width: calc(100% - 60px);
   padding: 70px 30px ;
 }
 .Certificates_Place{
@@ -625,7 +625,7 @@ td{
 /* ContactPage */
 .ContactPage{
   height: fit-content;
-  width: calc(100%-60px);
+  width: calc(100% - 60px);
   padding: 70px 30px 50px;
   backdrop-filter: blur(2px);
 
