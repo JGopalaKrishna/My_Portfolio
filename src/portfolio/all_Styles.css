@@ -852,15 +852,13 @@ box-shadow: 2px 2px 12px var(--secondary-color);
 }
 @media screen and (max-width:404px) {
   .Project_Img{height: 150px;}
-  .HomePage_Contant_Button1{font-size: 16px;}
-  .HomePage_Contant_Button2{font-size: 16px;}
+  .HomePage_Contant_Button1{font-size: 14px;}
+  .HomePage_Contant_Button2{font-size: 14px;}
 }
 
 
 @media screen and (max-width:380px) {
   .HomePage_Contant_Matter{font-size: 16px;}
-  .HomePage_Contant_Button1{font-size: 16px;}
-  .HomePage_Contant_Button2{font-size: 16px;}
 }
 @media screen and (max-width:365px) {
   .wrapper .static-txt{
