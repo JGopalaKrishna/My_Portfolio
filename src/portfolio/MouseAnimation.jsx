@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import 'C:/Users/jakka/OneDrive/Desktop/react/ReactFolder/src/portfolio/all_Styles.css';
+import './all_Styles.css';
 
 const MouseAnimation = ()=>{
     const cursorRef = useRef(null);
