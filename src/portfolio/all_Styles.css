@@ -118,9 +118,10 @@ a{text-decoration: none;}
 
 /* Home Page */
 .HomePage{
-  height: 100svh;
+  max-height: fit-content;
+  min-height: 90svh;
   width: calc(100% - 60px);
-  padding: 0 30px;
+  padding: 70px 30px 50px;
   display: flex;justify-content: space-between;align-items: center;
   /* background-color: red; */
 }
@@ -240,11 +241,11 @@ a{text-decoration: none;}
 
 /* About Page */
 .AboutPage{
-  /* min-height: 90svh; */
-  height: fit-content;
+  max-height: fit-content;
+  min-height: 90svh;
   width: calc(100% - 60px);
   padding: 70px 30px 50px;
-  display: flex;justify-content: space-between;align-items: start;
+  display: flex;justify-content: space-between;align-items: center;
 
  /* display: flex;flex-direction: column;gap: 30px; */
   /* background-color: red; */
@@ -334,18 +335,19 @@ td{
 
 /* SkillsPage */
 .SkillsPage{
-  /* min-height: 75svh; */
-  max-height: fit-content;width: calc(100% - 60px);
+  max-height: fit-content;
+  min-height: 90svh;
+  width: calc(100% - 60px);
   padding: 70px 30px 50px;
+  display: flex;justify-content: center;align-items: center;flex-direction: column;
   /* background-color: rgb(255, 217, 0); */
 }
 .Skills_Place{
-  height: fit-content; width: 100%;
-  display: flex;
-  justify-content: space-between;align-items: start;
+  width: 100%;
+  display: flex;justify-content: space-between;align-items: start;
   /* flex-direction: column;gap: 30px; */
   flex-wrap: wrap;row-gap: 100px;
-  /* background-color: #fff; */
+  /* background-color: #e34040; */
 }
 .Skills_Place_part{
   height: fit-content;width: 45%;
@@ -403,9 +405,11 @@ td{
 
 /* Projects */
 .ProjectsPage{
-  height: fit-content;
+  max-height: fit-content;
+  min-height: 90svh;
   width: calc(100% - 60px);
   padding: 70px 30px ;
+  display: flex;justify-content: center;align-items: center;flex-direction: column;
   /* position: relative; */
   /* background-color: gold; */
 }
@@ -564,70 +568,14 @@ td{
 
 
 
-
-/* CertificatesPage */
-.CertificatesPage{
-  height: fit-content;width: calc(100% - 60px);
-  padding: 70px 30px ;
-}
-.Certificates_Place{
-  display: flex;justify-content: center;align-items: center;flex-wrap: wrap;gap: 20px;
-}
-.Certificate_div{
-  height: 100px;width: 320px;
-  padding: 10px;border-radius: 20px;border: 2px solid var(--primary-color);
-  display: flex;justify-content: space-between;align-items: start;
-  /* background-color: red; */
-  backdrop-filter: blur(6px);
-  transition: all 1s;
-}
-.Certificate_div:hover{
-  transform:translateY(-10px);
-}
-.Certificate_Icon{
-  /* background-color: var(--primary-color); */
-  /* color: var(--secondary-color); */
-  color: var(--primary-color);
-  padding: 5px 6px;border-radius: 50%;
-  transition: all 1s;
-}
-.Certificate_div:hover .Certificate_Icon{
-  transform:scale(1.8);
-  text-shadow: 2px 2px 2px var(--secondary-color);
-}
-.Certificate_Content{
-  height: 100%;width: calc(100% - 50px);
-  /* background-color: rgb(76, 197, 76); */
-  display: flex;justify-content: space-evenly;align-items: start;flex-direction: column;
-}
-.Certificate_Issuer{font-size: var(--font-size2);}
-.Certificate_Name{font-size: var(--font-size1);}
-.Certificate_Data{
-  width: 100%;
-  display: flex;justify-content: space-between;align-items: start;
-  /* flex-direction: column;gap: 5px; */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ContactPage */
 .ContactPage{
-  height: fit-content;
+  max-height: fit-content;
+  min-height: 90svh;
   width: calc(100% - 60px);
   padding: 70px 30px 50px;
   backdrop-filter: blur(2px);
+  display: flex;justify-content: center;align-items: center;flex-direction: column;
 
 }
 .Contact_Info{
@@ -706,6 +654,39 @@ box-shadow: 2px 2px 12px var(--secondary-color);
 
 
 /* media quries */
+
+@media screen and (max-width:1142px) {
+  .wrapper .static-txt{
+    height: fit-content;
+    color: black;
+    font-size:  40px;
+    /* background-color: yellow; */
+  }
+  .wrapper .dynamic-txts{
+    /* font-size + 10px need to add =>  height,line-height */
+    height: 50px;  
+    line-height: 50px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 10px;
+    /* background-color: green; */
+  }
+  .dynamic-txts .liTag{
+    list-style: none;
+    color: var(--primary-color);
+    font-size:  40px;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+    /* height * 4 for 4 sentences*/
+      top: -200px;
+    }
+  }  
+
+}
 @media screen and (max-width:1030px) {
   .wrapper .static-txt{
     height: fit-content;
@@ -742,6 +723,17 @@ box-shadow: 2px 2px 12px var(--secondary-color);
 }
 
 
+@media screen and (max-width:1000px) {
+  .HomePage{
+    padding-top: 100px;height: fit-content;
+    flex-direction: column;
+    justify-content: start;align-items: center;gap: 20px;
+    /* background-color: red; */
+  }
+  .HomePage_Contant{
+    width: 100%;height: fit-content;
+  }
+}
 @media screen and (max-width:768px) {
 /* Nav Bar */
   .Navbar{justify-content: space-between;}
@@ -771,7 +763,7 @@ box-shadow: 2px 2px 12px var(--secondary-color);
   .single_Expertise_Contant{width: calc(100% - 260px);padding-left: 0;}
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:630px) {
   .wrapper .static-txt{
     height: fit-content;
     color: black;
@@ -814,17 +806,7 @@ box-shadow: 2px 2px 12px var(--secondary-color);
 
 
 @media screen and (max-width:500px) {
-  .custom_cursor{display: none;}
-  .single_Expertise{flex-direction: column;}
-  .single_Expertise_Heading{width: 100%;}
-  .single_Expertise_Contant{width: 90%;padding-left: 10%;}
-  /* .Skill_Img{display: none;} */
-  .Skill_Content{width: 100%;}
-  .ProjectDeatils_div{width: 90%;}
-}
-
-
-@media screen and (max-width:450px) {
+  /* Home Page */
   .wrapper .static-txt{
     height: fit-content;
     color: black;
@@ -854,13 +836,31 @@ box-shadow: 2px 2px 12px var(--secondary-color);
       top: -120px;
     }
   }
+  .custom_cursor{display: none;}
+  .single_Expertise{flex-direction: column;}
+  .single_Expertise_Heading{width: 100%;}
+  .single_Expertise_Contant{width: 90%;padding-left: 10%;}
+  /* .Skill_Img{display: none;} */
+  .Skill_Content{width: 100%;}
+  .ProjectDeatils_div{width: 90%;}
   .Skills_Place_part{
     width: 100%;
   }
 }
+@media screen and (max-width:425px) {
+  .Project_Img{height: 170px;}
+}
+@media screen and (max-width:404px) {
+  .Project_Img{height: 150px;}
+}
 
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:375px) {
+  .HomePage_Contant_Matter{font-size: 16px;}
+  .HomePage_Contant_Button1{font-size: 16px;}
+  .HomePage_Contant_Button2{font-size: 16px;}
+}
+@media screen and (max-width:365px) {
   .wrapper .static-txt{
     height: fit-content;
     color: black;
@@ -890,6 +890,10 @@ box-shadow: 2px 2px 12px var(--secondary-color);
       top: -104px;
     }
   }
+}
+
+@media screen and (max-width:350px) {
+  
   .HomePage_Contant_Matter{font-size: 16px;}
   .HomePage_Contant_Button1{font-size: 16px;}
   .HomePage_Contant_Button2{font-size: 16px;}
@@ -899,16 +903,18 @@ box-shadow: 2px 2px 12px var(--secondary-color);
   }
   .AboutPage_part1_MySelf_Matter{font-size: 16px;}
   .Skill_Img{height: 50px;width: 50px;}
-}
-
-
-
-@media screen and (max-width:320px) {
   .HomePage_Contant_Buttons{
     flex-direction: column;
-    /* background-color: red; */
     width: 100%;
   }
+  .Project_Img{height: 140px;}
+}
+
+@media screen and (max-width:335px) {
+  .Project_Img{height: 135px;}
+}
+
+@media screen and (max-width:320px) {
   .Project_Img{
     height: 129px;
   }
@@ -1040,3 +1046,4 @@ box-shadow: 2px 2px 12px var(--secondary-color);
 
   }
 }
+
