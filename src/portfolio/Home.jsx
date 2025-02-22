@@ -16,8 +16,8 @@ const Home = ()=>{
         </div>
         <div className='HomePage_Contant_Matter'>A dedicated developer with expertise in full-stack development, machine learning, and competitive programming. Passionate about continuous learning and building high-performance applications.</div>
         <div className='HomePage_Contant_Buttons'>
-          <a href="https://drive.google.com/file/d/146n9G0Ib1SPR6P0vglSzOBRcclg4Tfl7/view" target="_blank"><div className='HomePage_Contant_Button1'>View Resume</div></a>
-          <a href="https://drive.google.com/uc?export=download&id=146n9G0Ib1SPR6P0vglSzOBRcclg4Tfl7" download><div className='HomePage_Contant_Button2 shine_white_light'>Download Resume</div></a>
+          <a href="https://drive.google.com/file/d/1fPQ6nEDbeebATWJmcLqYt4pMZP-PyWLT/view" target="_blank"><div className='HomePage_Contant_Button1'>View Resume</div></a>
+          <a href="https://drive.google.com/uc?export=download&id=1fPQ6nEDbeebATWJmcLqYt4pMZP-PyWLT" download><div className='HomePage_Contant_Button2 shine_white_light'>Download Resume</div></a>
         </div>
       </section>
       <section className='HomePage_Image ComeFromRight'>
