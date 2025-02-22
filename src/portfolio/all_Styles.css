@@ -852,6 +852,7 @@ box-shadow: 2px 2px 12px var(--secondary-color);
 }
 @media screen and (max-width:404px) {
   .Project_Img{height: 150px;}
+  .HomePage_Contant_Buttons{background-color: red;}
 }
 
 
